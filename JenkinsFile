@@ -24,12 +24,6 @@ steps{
 sh 'npm run build'
 }
 }
-stage('Testing')
-{
-steps{
-sh 'npm test'
-}
-}
 stage('Deploying the application')
 {
 steps{
