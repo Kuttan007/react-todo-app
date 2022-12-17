@@ -27,7 +27,7 @@ sh 'npm run build'
 stage('Deploying')
 {
 steps{
-cp -pr build/* /var/www/html/
+sh 'cp -pr build/* /var/www/html/'
 }
 }
 }
