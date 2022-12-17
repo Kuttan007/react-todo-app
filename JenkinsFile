@@ -18,13 +18,13 @@ steps{
 sh 'npm install'
 }
 }
-stage('Building')
+stage('Building the application')
 {
 steps{
 sh 'npm run build'
 }
 }
-stage('Deploying')
+stage('Deploying the application')
 {
 steps{
 sh 'cp -R build/* /var/www/html/'
