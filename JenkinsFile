@@ -8,10 +8,13 @@ stages
 {
 stage('SCM')
 {
+steps{
 git branch: 'main', url: 'https://github.com/Kuttan007/react-todo-app.git'
 }
-steps
+}
+stage('Installing application')
 {
+steps{
 sh 'npm install'
 }
 }
