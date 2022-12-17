@@ -29,7 +29,6 @@ stage('Deploying')
 steps{
 
 sh '''
-setfacl -R -m u:jenkins:rwx /var/www/html
 cp -R build/* /var/www/html/'
 '''
 }
