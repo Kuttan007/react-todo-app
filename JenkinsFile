@@ -9,7 +9,7 @@ stages
 stage('SCM')
 {
 steps{
-git branch: 'main', url: 'https://github.com/Kuttan007/react-todo-app.git'
+git branch: 'main', url: 'https://github.com/devopzworld/react-todo-app.git'
 }
 }
 stage('Installing application')
